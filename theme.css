@@ -1,0 +1,15 @@
+:root {
+    /*colors*/
+      --primary: #0057B8;
+      --secondary: #F26A1B;
+      --dark: #0B132B;
+      --light: #F5F7FA;
+      --accent: #FFD700;
+
+      /*text*/
+      --text-primary: #0B132B;
+      --text-secondary: #4B5563;
+      --text-muted: #9CA3AF;
+      --text-light: #FFFFFF;
+      --text-accent: #F26A1B;
+}
