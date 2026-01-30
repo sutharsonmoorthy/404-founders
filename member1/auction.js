@@ -24,7 +24,6 @@ window.addEventListener('click', (e) => {
     if (searchDropdown.classList.contains('active') && 
         !searchDropdown.contains(e.target) && 
         !searchBtn.contains(e.target)) {
-        
         searchDropdown.classList.remove('active');
     }
 });

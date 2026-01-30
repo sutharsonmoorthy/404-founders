@@ -1,3 +1,4 @@
+/*Navbar*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -23,17 +24,17 @@
     padding: 0 15px;
 }
 
-.navbar-links li a:hover{
+.navbar-links li a:hover {
     color: var(--accent);
 }
 
-.navbar-right{
+.navbar-right {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.search-toggle-btn{
+.search-toggle-btn {
     border: none;
     background: transparent;
     color: var(--light);
@@ -43,8 +44,8 @@
 }
 
 .search-toggle-btn:hover {
-    color: var(--secondary);     
-    transform: scale(1.1);    
+    color: var(--secondary);
+    transform: scale(1.1);
 }
 
 .toggle-menu {
@@ -55,28 +56,44 @@
 
 /* Container for the dropdown */
 .search-bar-dropdown {
-    display: none; 
+    display: none;
     width: 100%;
-    padding: 10px 0; 
+    padding: 10px 0;
     background: var(--light);
     transition: all 0.3s ease;
     position: absolute;
+    top: 100%;
     left: 0;
     z-index: 1000;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar-dropdown.active {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    animation: slideDown 0.3s ease-out;
+}
+
+/*Animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .search-bar-dropdown input {
-    width: 80%; 
-    max-width: 500px; 
+    width: 80%;
+    max-width: 500px;
     padding: 12px 20px;
-    border-radius: 25px; 
+    border-radius: 25px;
     border: 1px solid #ddd;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     outline: none;
     font-family: var(--font-main);
     font-size: 1rem;
@@ -107,7 +124,7 @@
 }
 
 .search-close-btn:hover {
-    color: var(--secondary); 
+    color: var(--secondary);
 }
 
 /* --- Mobile View (Max 720px) --- */
@@ -116,7 +133,8 @@
         display: block;
     }
 
-    .navbar-right .search-toggle-btn, .search-bar-dropdown{
+    .navbar-right .search-toggle-btn,
+    .search-bar-dropdown {
         display: none;
     }
 
@@ -125,10 +143,12 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 100px;
+        top: 120px;
         left: 0;
         width: 100%;
         background: var(--dark);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
         padding: 20px;
     }
 
@@ -138,6 +158,13 @@
     }
 
     .navbar-links li {
-        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 10px 0;
+    }
+
+    .navbar-links li:last-child {
+        border-bottom: none;
     }
 }
