@@ -1,0 +1,150 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--dark);
+    color: var(--text-light);
+    position: sticky;
+    z-index: 1001;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar-links li a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.navbar-links li a:hover{
+    color: var(--accent);
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-toggle-btn{
+    border: none;
+    background: transparent;
+    color: var(--light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-toggle-btn:hover {
+    color: var(--secondary);     
+    transform: scale(1.1);    
+}
+
+.toggle-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Container for the dropdown */
+.search-bar-dropdown {
+    display: none; 
+    width: 100%;
+    padding: 10px 0; 
+    background: var(--light);
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+}
+
+.search-bar-dropdown.active {
+    display: flex;
+    justify-content: center; 
+}
+
+.search-bar-dropdown input {
+    width: 80%; 
+    max-width: 500px; 
+    padding: 12px 20px;
+    border-radius: 25px; 
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    outline: none;
+    font-family: var(--font-main);
+    font-size: 1rem;
+}
+
+.search-bar-dropdown input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 4px 20px rgba(0, 87, 184, 0.2);
+}
+
+/* --- Mobile View (Max 720px) --- */
+@media (max-width: 768px) {
+    .toggle-menu {
+        display: block;
+    }
+
+    .navbar-right .search-toggle-btn, .search-bar-dropdown{
+        display: none;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: var(--dark);
+        padding: 20px;
+    }
+
+    .navbar-links.show-menu {
+        display: flex;
+        z-index: 999;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+    }
+}
+
+/*Flash news*/
+.flash-container{
+    width: 100%;
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 10px 0;
+    font-weight: bold;
+    overflow:hidden ;
+}
+
+.flash-container span{
+    padding-right: 50px;
+}
+
+.flash-content{
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: flash 50s linear infinite;
+}
+
+@keyframes flash{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
