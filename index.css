@@ -7,6 +7,7 @@
     background: var(--dark);
     color: var(--text-light);
     position: sticky;
+    top: 0;
     z-index: 1001;
 }
 
@@ -87,6 +88,29 @@
     box-shadow: 0 4px 20px rgba(0, 87, 184, 0.2);
 }
 
+.search-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.search-close-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.search-close-btn:hover {
+    color: var(--secondary); 
+}
+
 /* --- Mobile View (Max 720px) --- */
 @media (max-width: 768px) {
     .toggle-menu {
@@ -127,6 +151,7 @@
     padding: 10px 0;
     font-weight: bold;
     overflow:hidden ;
+    margin-bottom: 30px;
 }
 
 .flash-container span{
