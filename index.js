@@ -1,3 +1,4 @@
+
 const searchBtn = document.getElementById('searchBtn');
 const searchDropdown = document.getElementById('searchDropdown');
 const closeSearch = document.getElementById('closeSearch'); 

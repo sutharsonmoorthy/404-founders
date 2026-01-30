@@ -20,12 +20,12 @@
 </head>
 
 <body>
-    <header class=""></header>
-
+    <!--Navbar-->
     <nav class="navbar">
         <div class="logo">
             <img src="./index-images/logo1.png" alt="logo">
         </div>
+
         <ul class="navbar-links" id="navbar-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Auction</a></li>
@@ -35,34 +35,32 @@
             <li><a href="#">Points</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+
         <div class="navbar-right">
             <button type="button" class="search-toggle-btn" id="searchBtn">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <div class="toggle-menu" id="menuToggle"><i class="fa-solid fa-bars"></i></div>
+            <div class="toggle-menu" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="search-bar-dropdown" id="searchDropdown">
+            <div class="search-inner-container">
+                <input type="text" placeholder="Search...">
+                <button type="button" class="search-close-btn" id="closeSearch">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <!---
-    <div class="search-bar-dropdown" id="searchDropdown">
-        <input type="text" placeholder="Search...">
-    </div> -->
-    <div class="search-bar-dropdown" id="searchDropdown">
-    <div class="search-inner-container">
-        <input type="text" placeholder="Search...">
-        <button type="button" class="search-close-btn" id="closeSearch">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-    </div>
-</div>
-    </nav>
-
+    <!--Flash container-->
     <div class="flash-container">
         <div class="flash-content">
             <span>This year tournament and inauguration starts on May 1st</span>
             <span>Rivalry match between Chennai & Bengaluru as this year opening Match</span>
             <span>Don't miss the match and the inauguration ceremony </span>
-            <span>Book your slots soon!!!</span>
+            <span>Book your slots soon</span>
         </div>
     </div>
 
