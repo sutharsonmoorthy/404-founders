@@ -2,6 +2,208 @@ body {
     background: #f1f4f9;
     font-family: 'Poppins', sans-serif;
 }
+/*Navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background:black;
+    color:white;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar-links li a {
+    color: var(--text-light);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.navbar-links li a:hover {
+    color: var(--accent);
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-toggle-btn {
+    border: none;
+    background: transparent;
+    color: var(--light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-toggle-btn:hover {
+    color: var(--secondary);
+    transform: scale(1.1);
+}
+
+.toggle-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Container for the dropdown */
+.search-bar-dropdown {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+    background: var(--light);
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar-dropdown.active {
+    display: flex;
+    justify-content: center;
+    animation: slideDown 0.3s ease-out;
+}
+
+/*Animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.search-bar-dropdown input {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-family: var(--font-main);
+    font-size: 1rem;
+}
+
+.search-bar-dropdown input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 4px 20px rgba(0, 87, 184, 0.2);
+}
+
+.search-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.search-close-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.search-close-btn:hover {
+    color: var(--secondary);
+}
+
+/* --- Mobile View */
+@media (max-width: 768px) {
+    .toggle-menu {
+        display: block;
+    }
+
+    .navbar-right .search-toggle-btn,
+    .search-bar-dropdown {
+        display: none;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        background: var(--dark);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        padding: 20px;
+    }
+
+    .navbar-links.show-menu {
+        display: flex;
+        z-index: 999;
+    }
+
+    .navbar-links li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 10px 0;
+    }
+
+    .navbar-links li:last-child {
+        border-bottom: none;
+    }
+}
+
+/*Flash news*/
+.flash-container {
+    width: 100%;
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 10px 0;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.flash-container span {
+    padding-right: 50px;
+}
+
+.flash-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: flash 50s linear infinite;
+}
+
+@keyframes flash {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
 /* HEADER */
 .ip-header {
@@ -10,7 +212,7 @@ body {
 
 /* PAGE TITLE */
 .page-title {
-    background: linear-gradient(90deg, #041a3a, #0b3c7a);
+    background: linear-gradient(90deg, #03132b, #0b3c7a);
     color: #f1f4f9;
     padding: 25px 0;
 }
