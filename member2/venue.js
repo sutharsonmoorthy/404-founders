@@ -1,10 +1,5 @@
-function acceptCookies() {
-    document.getElementById("cookieBox").style.display = "none";
-    localStorage.setItem("cookiesAccepted", "true");
-}
-
-window.onload = function () {
-    if (localStorage.getItem("cookiesAccepted")) {
-        document.getElementById("cookieBox").style.display = "none";
-    }
-};
+document.querySelectorAll(".venue-card button").forEach(btn => {
+    btn.addEventListener("click", () => {
+        alert("Venue details coming soon!");
+    });
+});
