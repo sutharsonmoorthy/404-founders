@@ -408,3 +408,123 @@ body {
         transform: translateX(-100%);
     }
 }
+
+/*Footer*/
+.footer-container {
+    background: var(--dark);
+    color: var(--text-light);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.footer-col {
+    padding: 20px;
+    min-width: 220px;
+}
+
+.footer-col h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 5px;
+    color: var(--accent);
+}
+
+/*Footer sponsor*/
+.footer-sponsor {
+    background: var(text-primary);
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid var(--text-muted);
+}
+
+.sponsor-label {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.sponsor-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.sponsor-logo img {
+    width: auto;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.sponsor-logo img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-top: 1px solid var(--text-muted);
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-col {
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-col:last-child {
+        border-bottom: none;
+    }
+
+    .footer-col h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .sponsor-logo {
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .sponsor-logo img {
+        max-width: 100px;
+        height: auto;
+    }
+}
