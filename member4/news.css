@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;  
+}
+.container1{
+    background-color: #061E59;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.img_1{
+    height: 25px;
+    width: 25px;
+}
+.namme{
+    color: white;
+}
+.img_2{
+    height: 25px;
+    width: 50px;
+}
+.topbar{
+    display: flex;
+    gap: 50px;
+    align-items: center; 
+}
+.box{
+    display: flex;
+    
+    gap: 20px;
+}
+.box_1{
+    align-content: center;
+}
+.text{
+    color: white;
+}
+.fnt_1{
+    height: 20px;
+    width: 20px;   
+}
+/* top bar finish */
+.two{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #19398A;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-around;
+}
+.pic2{
+    text-align: center;
+    height: 40px;
+    width: 80px;
+}
+.pic3{
+    height: 30px;
+    width: 70px;
+}
+.two1{
+    align-content: center;
+}
+.two2 a{
+    color: white;
+    gap: 20px;
+    
+}
+.two22{
+    display: flex;
+    gap: 60px;
+    font-size: small;
+}
+
+.two3{
+    align-self: center;
+    display: flex;
+    gap: 20px;
+}
+/* 2nd bar finish */
+/* sponser */
+.Spons{
+    background-color: #081E40;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.Spons h5{
+    color: white;
+    
+}
+.roof{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-right: white 2px solid;
+    padding: 10px;
+}
+.gasolin{
+    display: flex;
+    gap: 20px;
+}
+
+.pht1{
+    height: 100px;
+    width: 120px;
+}
+
+/* Footer site */
+.footer{
+    background-color: #11141C;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.heading{
+    color: white;
+}
+.same{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}.same a{
+    color: white;
+    border: none;
+}
+/* bottom */
+.bottom{
+    background-color: black;
+    padding: 5px;
+}
+.bottom h5{
+    color: white;
+    text-align: center;
+}
+.two22 li{
+    list-style:none;
+}
+/* image */
+.rcb{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    
+}
+.virat{
+    width: 100%;
+   height: 500px;
+}
+.virat1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 2;
+    
+}
+.rcb1{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left:40px;
+    width: 40%;
+    transform: translate(0,-50%);
+}
+.rest{
+    background-color: orangered;
+    padding: 10px;
+    color: white;
+}
+.rest1{
+    padding: 10px;
+    background-color: orangered;
+    transform: skew(-20deg);
+    width: 30%;
+    font-size: large;
+    color: white;
+
+}
+.rcb1 h1{
+    font-size: xx-large;
+}
+/* News container */
+.newsu{
+    padding: 30px;
+}
+.newsu1 button{
+    padding: 10px;
+    
+}
+.newsu1{
+    border: solid black 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news2{
+    display: flex;
+    gap: 5%;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+.news2 img{
+    width: 250px;
+    height: 250px;
+    
+    
+}
