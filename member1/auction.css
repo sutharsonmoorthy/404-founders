@@ -288,3 +288,88 @@
         height: auto;
     }
 }
+
+/*Flash news*/
+.flash-container {
+    width: 100%;
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 10px 0;
+    font-weight: bold;
+    overflow: hidden;
+    margin-bottom: 30px;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.flash-container span {
+    padding-right: 50px;
+}
+
+.flash-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: flash 50s linear infinite;
+}
+
+@keyframes flash {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*Years*/
+.year-container {
+    background: var(--primary);
+    padding: 10px 20px;
+}
+
+.year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.year li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.year li a {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+.year li a:hover {
+    color: var(--accent);
+}
+
+/*auction heading*/
+.auction-heading {
+    background: var(--text-primary);
+    color: var(--text-light);
+    padding: 10px;
+    box-shadow: 0 0 15px var(--text-primary);
+    margin: 5px 0;
+}
+
+.auction-heading div {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    gap: 20px;
+}
+
+/*Gallery*/
+.gallery-container {
+    background: var(--muted);
+
+}
