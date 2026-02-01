@@ -1,9 +1,3 @@
-document.querySelectorAll(".venue-card button").forEach(btn => {
-    btn.addEventListener("click", () => {
-        alert("Venue details coming soon!");
-    });
-});
-
 //Navbar 
 const searchBtn = document.getElementById('searchBtn');
 const searchDropdown = document.getElementById('searchDropdown');

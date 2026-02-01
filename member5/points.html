@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
   <!-- COMMON THEME -->
-  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="../theme.css">
 
- 
+
   <link rel="stylesheet" href="index.css">
 
-  
+
   <link rel="stylesheet" href="points.css">
+
+  <!--Link Fontawesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
+     <!--Navbar-->
+    <nav class="navbar">
         <div class="logo">
             <img src="./index-images/logo1.png" alt="logo">
         </div>
 
         <ul class="navbar-links" id="navbar-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#">Auction</a></li>
-            <li><a href="#">Venues</a></li>
+            <li><a href="./member2/venue.html">Venues</a></li>
             <li><a href="#">Teams</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Points</a></li>
+            <li><a href="./member4/news.html">News</a></li>
+            <li><a href="./member6/points.html">Points</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
 
-      
+        <div class="navbar-right">
+            <button type="button" class="search-toggle-btn" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="toggle-menu" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="search-bar-dropdown" id="searchDropdown">
+            <div class="search-inner-container">
+                <input type="text" placeholder="Search...">
+                <button type="button" class="search-close-btn" id="closeSearch">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
     </nav>
 
-        <div class="flash-container">
+    <!--Flash-->
+    <div class="flash-container">
         <div class="flash-content">
             <span>This year tournament and inauguration starts on May 1st</span>
             <span>The most awaited Chennai and Bengaluru team clashes on the opening day</span>
             <span>Don't miss the match and the inauguration ceremony </span>
-            <span>Book your slots soon</span>
+            <span>Book your slots soon!!!</span>
         </div>
     </div>
 
-
-    <!-- ===== TOP TABS ===== -->
+  <!-- ===== TOP TABS ===== -->
   <div class="tabs-wrapper">
-  <button class="tab-btn active" data-tab="points">Points Table</button>
-  <button class="tab-btn active" data-tab="playoffs">Playoffs</button>
-</div>
+    <button class="tab-btn active" data-tab="points">Points Table</button>
+    <button class="tab-btn active" data-tab="playoffs">Playoffs</button>
+  </div>
 
 
   <!-- ===== FILTERS ===== -->
- <div class="filters-wrapper">
-  <select id="genderSelect">
-    <option value="men">MEN</option>
-    <option value="women">WOMEN</option>
-  </select>
+  <div class="filters-wrapper">
+    <select id="genderSelect">
+      <option value="men">MEN</option>
+      <option value="women">WOMEN</option>
+    </select>
 
-  <select id="seasonSelect">
-    <option value="2025">SEASON 2025</option>
-    <option value="2024">SEASON 2024</option>
-  </select>
-</div>
+    <select id="seasonSelect">
+      <option value="2025">SEASON 2025</option>
+      <option value="2024">SEASON 2024</option>
+    </select>
+  </div>
 
 
   <!-- POINTS TABLE  -->
@@ -69,135 +90,134 @@
     <h2>POINTS TABLE</h2>
 
     <div class="points-card">
-  <table class="points-table">
-    <thead>
-      <tr>
-        <th>POS</th>
-        <th>TEAM</th>
-        <th>P</th>
-        <th>W</th>
-        <th>L</th>
-        <th>NR</th>
-        <th>NRR</th>
-        <th>FOR</th>
-        <th>AGAINST</th>
-        <th>PTS</th>
-        <th>RECENT FORM</th>
-      </tr>
-    </thead>
-    <tbody id="pointsBody"></tbody>
+      <table class="points-table">
+        <thead>
+          <tr>
+            <th>POS</th>
+            <th>TEAM</th>
+            <th>P</th>
+            <th>W</th>
+            <th>L</th>
+            <th>NR</th>
+            <th>NRR</th>
+            <th>FOR</th>
+            <th>AGAINST</th>
+            <th>PTS</th>
+            <th>RECENT FORM</th>
+          </tr>
+        </thead>
+        <tbody id="pointsBody"></tbody>
 
-  </table>
-</div>
-
-<section class="sponsors">
-  <div class="sponsor-item">
-    <p class="sponsor-title">TITLE SPONSOR</p>
-    <img src="index-images/tata.png" alt="TATA">
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="sponsor-item wide">
-    <p class="sponsor-title">ASSOCIATE PARTNER</p>
-    <div class="logo-row">
-      <img src="index-images/angel-one.png" alt="Angel One">
-      <img src="index-images/rupay.png" alt="RuPay">
+      </table>
     </div>
-  </div>
 
-  <div class="divider"></div>
+    <section class="sponsors">
+      <div class="sponsor-item">
+        <p class="sponsor-title">TITLE SPONSOR</p>
+        <img src="index-images/tata.png" alt="TATA">
+      </div>
 
-  <div class="sponsor-item">
-    <p class="sponsor-title">OFFICIAL UMPIRE PARTNER</p>
-    <img src="index-images/wonder-cement.png" alt="Wonder Cement">
-  </div>
+      <div class="divider"></div>
 
-  <div class="divider"></div>
+      <div class="sponsor-item wide">
+        <p class="sponsor-title">ASSOCIATE PARTNER</p>
+        <div class="logo-row">
+          <img src="index-images/angel-one.png" alt="Angel One">
+          <img src="index-images/rupay.png" alt="RuPay">
+        </div>
+      </div>
 
-  <div class="sponsor-item">
-    <p class="sponsor-title">OFFICIAL STRATEGIC TIMEOUT PARTNER</p>
-    <img src="index-images/ceat.png" alt="CEAT">
-  </div>
+      <div class="divider"></div>
 
-  <div class="divider"></div>
+      <div class="sponsor-item">
+        <p class="sponsor-title">OFFICIAL UMPIRE PARTNER</p>
+        <img src="index-images/wonder-cement.png" alt="Wonder Cement">
+      </div>
 
-  <div class="sponsor-item">
-    <p class="sponsor-title">OFFICIAL BROADCASTER</p>
-    <img src="index-images/star-sports.png" alt="Star Sports">
-  </div>
+      <div class="divider"></div>
 
-  <div class="divider"></div>
+      <div class="sponsor-item">
+        <p class="sponsor-title">OFFICIAL STRATEGIC TIMEOUT PARTNER</p>
+        <img src="index-images/ceat.png" alt="CEAT">
+      </div>
 
-  <div class="sponsor-item">
-    <p class="sponsor-title">OFFICIAL DIGITAL STREAMING PARTNER</p>
-    <img src="index-images/jiohotstar.png" alt="JioHotstar">
-  </div>
-</section>
+      <div class="divider"></div>
+
+      <div class="sponsor-item">
+        <p class="sponsor-title">OFFICIAL BROADCASTER</p>
+        <img src="index-images/star-sports.png" alt="Star Sports">
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="sponsor-item">
+        <p class="sponsor-title">OFFICIAL DIGITAL STREAMING PARTNER</p>
+        <img src="index-images/jiohotstar.png" alt="JioHotstar">
+      </div>
+    </section>
 
 
-  <!--Footer-->
+    <!--Footer-->
     <footer class="footer-container">
-        <div class="footer-content">
-            <div class="footer-col">
-                <h3>Teams</h3>
-                <ul>
-                    <li><a href="#">Chennai</a></li>
-                    <li><a href="#">Bengaluru</a></li>
-                    <li><a href="#">Delhi</a></li>
-                    <li><a href="#">Kolkata</a></li>
-                    <li><a href="#">Punjab</a></li>
-                    <li><a href="#">Mumbai</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Guidelines</h3>
-                <ul>
-                    <li><a href="#">Code of Conduct</a></li>
-                    <li><a href="#">Protection Guidelines</a></li>
-                    <li><a href="#">Governing Coucil</a></li>
-                    <li><a href="#">Minimum Standard</a></li>
-                    <li><a href="#">Action Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>About Us</h3>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Anti Corruption</a></li>
-                    <li><a href="#">Anti Doping</a></li>
-                    <li><a href="#">Discrimination code</a></li>
-                    <li><a href="#">Application form</a></li>
-                    <li><a href="#">Image use terms</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Contact</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Auction</a></li>
-                    <li><a href="#">Venues</a></li>
-                    <li><a href="#">Teams</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Points</a></li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>Teams</h3>
+          <ul>
+            <li><a href="#">Chennai</a></li>
+            <li><a href="#">Bengaluru</a></li>
+            <li><a href="#">Delhi</a></li>
+            <li><a href="#">Kolkata</a></li>
+            <li><a href="#">Punjab</a></li>
+            <li><a href="#">Mumbai</a></li>
+          </ul>
         </div>
-        <div class="footer-sponsor">
-            <p class="sponsor-label">Official partners</p>
-            <div class="sponsor-logo">
-                <img src="../index-images/spon-3.png" alt="sponsor">
-                <img src="../index-images/spon-1.png" alt="sponsor">
-                <img src="../index-images/spon-2.png" alt="sponsor">
-            </div>
+        <div class="footer-col">
+          <h3>Guidelines</h3>
+          <ul>
+            <li><a href="#">Code of Conduct</a></li>
+            <li><a href="#">Protection Guidelines</a></li>
+            <li><a href="#">Governing Coucil</a></li>
+            <li><a href="#">Minimum Standard</a></li>
+            <li><a href="#">Action Policy</a></li>
+          </ul>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 404 Founders Project</p>
+        <div class="footer-col">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Anti Corruption</a></li>
+            <li><a href="#">Anti Doping</a></li>
+            <li><a href="#">Discrimination code</a></li>
+            <li><a href="#">Application form</a></li>
+            <li><a href="#">Image use terms</a></li>
+          </ul>
         </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Auction</a></li>
+            <li><a href="#">Venues</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Points</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-sponsor">
+        <p class="sponsor-label">Official partners</p>
+        <div class="sponsor-logo">
+          <img src="../index-images/spon-3.png" alt="sponsor">
+          <img src="../index-images/spon-1.png" alt="sponsor">
+          <img src="../index-images/spon-2.png" alt="sponsor">
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 404 Founders Project</p>
+      </div>
     </footer>
-  <script src="index.js"></script>
 
-  
-  <script src="points.js"></script>
+    <script src="points.js"></script>
 </body>
+
 </html>
