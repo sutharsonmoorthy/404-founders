@@ -17,12 +17,6 @@ A collaborative web development project focused on building a modern, responsive
 * **Auction Module:** A dedicated interface for real-time item listings and bidding (In Progress).
 * **Unified Branding:** Design elements inspired by professional sports and tech interfaces.
 
-## 📁 Project Structure
-* `index.html` - The main entry point and landing page.
-* `theme.css` - Global styles and color variables.
-* `/auction` - Module for the auction functionality.
-* `/assets` - Images and shared resources.
-
 ## ⚙️ Installation & Usage
 1. Clone the repository:
    ```bash
